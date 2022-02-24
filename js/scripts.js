@@ -8,3 +8,4 @@ function Pizza(pizzaSize, pizzaCrust, pizzaSauce, pizzaTopping) {
 }
 
 const myPizza = new Pizza("small", "red sauce", ["pepperoni", "pineapple"]);
+const myPizza = new Pizza("small", "thick", "red sauce", ["pepperoni", "pineapple"]);
