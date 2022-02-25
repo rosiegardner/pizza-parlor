@@ -20,6 +20,12 @@ Pizza.prototype.totalOrder = function() {
   if (this.pizzaSize === "large-16inch") {
     this.pizzaPricing += 6;
   }
+  if (this.pizzaCrust === "Thick Crust") {
+    this.pizzaPricing += 3;
+  }
+  if (this.pizzaCrust === "Stuffed Crust") {
+    this.pizzaPricing += 2;
+  }
   return this.pizzaPricing
 };
 

@@ -43,7 +43,17 @@ Code: myPizza.totalOrder();
 Input: "medium-13inch";
 Expected Output: 18;
 
-Test: "This prototype should return the base price of 15 increased by 6 for a large-16inch pizza."
+Test: "This prototype should return the base price increased by 6 for a large-16inch pizza."
 Code: myPizza.totalOrder();
 Input: "large-16inch";
 Expected Output: 21;
+
+Test: "This prototype should return the base price increased by 3 for a "Thick Crust" medium or large pizza."
+Code: myPizza.totalOrder();
+Input: "Thick Crust"
+Expected Output: 21/24;
+
+Test: "This prototype should return the base price increased by 2 for a "Stuffed Crust" medium or large pizza."
+Code: myPizza.totalOrder();
+Input: "Stuffed Crust"
+Expected Output: 20/22;
