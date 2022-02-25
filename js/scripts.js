@@ -25,17 +25,14 @@ Pizza.prototype.totalOrder = function() {
   }
   if (this.pizzaCrust === "Stuffed Crust") {
     this.pizzaPricing += 2;
+  } 
+  if (this.pizzaTopping === " ") {
+    this.pizzaPricing += 1;
+  } else {
+    this.pizzaPricing += 0;
   }
-  // if (this.pizzaTopping === ["Pepperoni"]) {
-  //   this.pizzaPricing += 1;
-  // }
-  // if (this.pizzaTopping === ["Pineapple"]) {
-  //   this.pizzaPricing += 1;
-  // } else {
-  //   this.pizzaPricing += 0;
-  // }
   return this.pizzaPricing;
 };
 
 
-const myPizza = new Pizza("large-16inch", "Stuffed Crust", "Red Sauce", ["Pepperoni", " Pineapple"]);
+const myPizza = new Pizza
