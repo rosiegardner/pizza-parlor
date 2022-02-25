@@ -35,4 +35,4 @@ Pizza.prototype.totalOrder = function() {
 };
 
 
-const myPizza = new Pizza
+const myPizza = new Pizza(pizzaSize, pizzaCrust, pizzaSauce, pizzaTopping, pizzaPrice);

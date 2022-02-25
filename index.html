@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+  <link href="css/bootstrap.css" rel ="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
   <script src="js/scripts.js"></script>
   <script src="js/jquery-3.6.0.js"></script>
   <title>Pizza Parlor</title>
 </head>
 <body>
   <div class="jumbotron">
-    
+    <h1 class="font-effect-neon">Trash Gremlin Pizzeria</h1>
+    <br>
+    <h6>By: Rosie Gardner</h6>
+  </div>
+  <div class="container">
+    <form id="pizza-order">
+      <div class="pizza-party">
+        <h2>Build Your Gremlin Pizza!</h2>
+        <p>Select Size:</p>
+        <input type="radio" id="small-10inch" name="pizza-size" value="pizza">
+        <label for="small-10inch">Small - 10"</label>
+        <br>
+        <input type="radio" id="medium-13inch" name="pizza-size" value="pizza">
+        <label for="medium-13inch">Medium - 13"</label>
+        <br>
+        <input type="radio" id="large-16inch" name="pizza-size" value="pizza">
+        <label for="large-16inch">Large - 16"</label>
+      </div>
+      
+
+
+    </form>
   </div>
 </body>
 </html>
