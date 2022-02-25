@@ -8,9 +8,14 @@ Test: "It should return Pizza object with 3 properties for size, crust, sauce, a
 Code: const myPizza = new Pizza("small", "red sauce", ["pepperoni", "pineapple"]);
 Expected Output: Pizza { 'small', 'red sauce', ['pepperoni', 'pineapple'] }
 
+Test: "It should return a base price of 15"
+Code: this.pizzaPricing = 15;
+Expected Output: true;
+
 Describe: Pizza.prototype.myOrder()
 
 Test: "This prototype should return the Pizza() order concatenated together".
 Code: myPizza.myOrder();
 Expected Output: 'small pizza, red sauce, topped with: pepperoni, pineapple'
 
+Describe: 
