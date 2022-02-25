@@ -42,6 +42,7 @@ $(document).ready(function() {
     let pizzaSize = $("input#pizza-size").val();
     let pizzaSauce = $("input#pizza-slime").val();
     let pizzaCrust = $("input#pizza-crust").val();
+    let pizzaTopping = $("input#pizza-topping").val();
 
     const myPizza = new Pizza(pizzaSize, pizzaCrust, pizzaSauce, pizzaTopping, pizzaPrice);
   });
