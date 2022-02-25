@@ -34,5 +34,15 @@ Pizza.prototype.totalOrder = function() {
   return this.pizzaPricing;
 };
 
+// User Interface Logic
 
-const myPizza = new Pizza(pizzaSize, pizzaCrust, pizzaSauce, pizzaTopping, pizzaPrice);
+$(document).ready(function() {
+  $("#pizzaOrder").submit(function(event) {
+    event.preventDefault();
+    let pizzaSize = $("input#pizza-size").val();
+    let pizzaSauce = $("input#pizza-slime").val();
+    let pizzaCrust = $("input#pizza-crust").val();
+
+    const myPizza = new Pizza(pizzaSize, pizzaCrust, pizzaSauce, pizzaTopping, pizzaPrice);
+  });
+});
