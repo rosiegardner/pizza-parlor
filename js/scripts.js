@@ -15,3 +15,4 @@ Pizza.prototype.myOrder = function() {
 
 const myPizza = new Pizza("small", ["pepperoni", "pineapple"]);
 const myPizza = new Pizza("small", "red sauce", ["pepperoni", " pineapple"]);
+const myPizza = new Pizza("small", "red sauce", ["pepperoni", "pineapple"], 15);
