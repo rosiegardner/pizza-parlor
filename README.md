@@ -16,6 +16,11 @@ Test: "It should return Pizza object with 3 properties and conditional base pric
 Code: const myPizza = new Pizza("small", "red sauce", ["pepperoni", "pineapple"], 15);
 Expected Output: Pizza { 'small', 'red sauce', ['pepperoni', 'pineapple'] 15}
 
+Test: "It should return Pizza object with 4 properties and base price of 15"
+Code: const myPizza = new Pizza("small-10inch", "thick crust", "red sauce", ["pepperoni", " pineapple"] 15);
+Expected Output: Pizza { 'small-10inch', 'thick crust', 'red sauce', ['pepperoni', 'pineapple'] 15}
+
+
 Describe: Pizza.prototype.myOrder()
 
 Test: "This prototype should return the Pizza() order concatenated together".
