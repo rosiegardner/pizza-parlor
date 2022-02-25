@@ -10,7 +10,7 @@ function Pizza(pizzaSize, pizzaCrust, pizzaSauce, pizzaTopping) {
 
 
 Pizza.prototype.myOrder = function() {
-  return this.pizzaSize + " pizza, " + this.pizzaCrust + " with " + this.pizzaSauce + ", topped with: " + this.pizzaTopping + " will be $" + this.pizzaPricing;
+  return this.pizzaSize + " pizza, " + this.pizzaCrust + " with " + this.pizzaSauce + ", topped with: " + this.pizzaTopping;
 };
 
 Pizza.prototype.totalOrder = function() {
@@ -26,8 +26,16 @@ Pizza.prototype.totalOrder = function() {
   if (this.pizzaCrust === "Stuffed Crust") {
     this.pizzaPricing += 2;
   }
-  return this.pizzaPricing
+  // if (this.pizzaTopping === ["Pepperoni"]) {
+  //   this.pizzaPricing += 1;
+  // }
+  // if (this.pizzaTopping === ["Pineapple"]) {
+  //   this.pizzaPricing += 1;
+  // } else {
+  //   this.pizzaPricing += 0;
+  // }
+  return this.pizzaPricing;
 };
 
 
-const myPizza = new Pizza
+const myPizza = new Pizza("large-16inch", "Stuffed Crust", "Red Sauce", ["Pepperoni", " Pineapple"]);
