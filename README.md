@@ -34,3 +34,16 @@ Expected Output: 'small pizza, red sauce, topped with: pepperoni, pineapple will
 Test: "This prototype should return the Pizza() order concatenated together to include crust style"
 Code: myPizza.myOrder();
 Expected Output: 'small-10inch pizza, thick crust with red sauce, topped with: pepperoni, pineapple will be $15'
+
+
+Describe: Pizza.prototype.totalOrder()
+
+Test: "This prototype should return the base price of 15 increased by 3 for a medium-13inch pizza."
+Code: myPizza.totalOrder();
+Input: "medium-13inch";
+Expected Output: 18;
+
+Test: "This prototype should return the base price of 15 increased by 6 for a large-16inch pizza."
+Code: myPizza.totalOrder();
+Input: "large-16inch";
+Expected Output: 21;
