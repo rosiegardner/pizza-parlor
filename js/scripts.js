@@ -9,10 +9,10 @@ function Pizza(pizzaSize, pizzaSauce, pizzaTopping) {
 
 
 Pizza.prototype.myOrder = function() {
-  return this.pizzaSize + " pizza, " + this.pizzaSauce + ", topped with: " + this.pizzaTopping;
+  return this.pizzaSize + " pizza, " + this.pizzaSauce + ", topped with: " + this.pizzaTopping + " will be $" + this.pizzaPricing;
 };
 
 
 const myPizza = new Pizza("small", ["pepperoni", "pineapple"]);
 const myPizza = new Pizza("small", "red sauce", ["pepperoni", " pineapple"]);
-const myPizza = new Pizza("small", "red sauce", ["pepperoni", "pineapple"], 15);
+const myPizza = new Pizza("small", "red sauce", ["pepperoni", " pineapple"], 15);

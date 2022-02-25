@@ -22,4 +22,6 @@ Test: "This prototype should return the Pizza() order concatenated together".
 Code: myPizza.myOrder();
 Expected Output: 'small pizza, red sauce, topped with: pepperoni, pineapple'
 
-Describe: 
+Test : "This prototype should return the Pizza() order concatenated together including the base price of 15"
+Code: myPizza.myOrder();
+Expected Output: 'small pizza, red sauce, topped with: pepperoni, pineapple will be $15'
