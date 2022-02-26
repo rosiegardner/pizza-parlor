@@ -15,75 +15,83 @@
     <h6>By: Rosie Gardner</h6>
   </div>
   <div class="container">
-    <form id="pizzaOrder">
-      <div class="pizza-party">
+    <div class="row">
+      <div class="col-md-6">
         <h2>Build Your Gremlin Pizza!</h2>
-        <p>Select Size:</p>
-        <input type="radio" id="pizza-size" name="small-10inch" value="pizza">
-        <label for="pizza-size">Small - 10" ($15)</label>
-        <br>
-        <input type="radio" id="pizza-size" name="medium-13inch" value="pizza">
-        <label for="pizza-size">Medium - 13" ($18)</label>
-        <br>
-        <input type="radio" id="pizza-size" name="large-16inch" value="pizza">
-        <label for="pizza-size">Large - 16" ($21)</label>
+        <form id="pizzaOrder">
+          <div class="pizza-party">
+            <p class="font-effect-neon">Select Size:</p>
+            <input type="radio" id="small-10inch" name="pizza-size" value="pizza" checked>
+            <label for="small-10inch">Small - 10" ($15)</label>
+            <br>
+            <input type="radio" id="medium-13inch" name="pizza-size" value="pizza">
+            <label for="medium-13inch">Medium - 13" ($18)</label>
+            <br>
+            <input type="radio" id="large-16inch" name="pizza-size" value="pizza">
+            <label for="large-16inch">Large - 16" ($21)</label>
+          </div>
+          <div class="pizza-party">
+            <p class="font-effect-neon">Select Gremlin Crust Style:</p>
+            <input type="radio" id="thin-crust" name="pizza-crust" value="pizza" checked>
+            <label for="thin-crust">Thin Crust</label>
+            <br>
+            <input type="radio" id="tossed-crust" name="pizza-crust" value="pizza">
+            <label for="tossed-crust">Hand Tossed</label>
+            <br>
+            <input type="radio" id="thick-crust" name="pizza-crust"
+            value="pizza">
+            <label for="thick-crust">Thick Crust ($3)</label>
+            <br>
+            <input type="radio" id="stuffed-crust" name="pizza-crust" value="pizza">
+            <label for="stuffed-crust">Stuffed Crust ($2)</label>
+          </div>
+          <div class="pizza-party">
+            <p class="font-effect-neon">Select your Saucy Slime:</p>
+            <input type="radio" id="red-slime" name="pizza-slime" value="pizza" checked>
+            <label for="red-slime">Red Slime</label>
+            <br>
+            <input type="radio" id="white-slime" name="pizza-slime" value="pizza">
+            <label for="white-slime">White Slime</label>
+          </div>
+          <div class="pizza-party">
+            <p class="font-effect-neon">Select Trash Toppings: ($1)</p>
+            <input type="checkbox" id="dirt-cheese" name="pizza-topping" value="pizza" checked>
+            <label for="dirt-cheese">Dirt Cheese</label>
+            <br>
+            <input type="checkbox" id="molderoni" name="pizza-topping" value="pizza">
+            <label for="molderoni">'Mold'eroni</label>
+            <br>
+            <input type="checkbox" id="ham" name="pizza-topping" value="pizza">
+            <label for="ham">Hazard Ham</label>
+            <br>
+            <input type="checkbox" id="anchovy" name="pizza-topping" value="pizza">
+            <label for="anchovy">Acidic Anchovies</label>
+            <br>
+            <input type="checkbox" id="fly-larvae" name="pizza-topping" value="pizza">
+            <label for="fly-larvae">Aged Fly Larvae</label>
+            <br>
+            <input type="checkbox" id="pineapple" name="pizza-topping" value="pizza">
+            <label for="pineapple">Spoiled Pineapple</label>
+            <br>
+            <input type="checkbox" id="artichoke" name="pizza-topping" value="pizza">
+            <label for="artichoke">Rancid ArtiCHOKEs</label>
+            <br>
+            <input type="checkbox" id="onion" name="pizza-topping" value="pizza">
+            <label for="onion">Rotten Red Onion</label>
+            <br>
+            <input type="checkbox" id="kale" name="pizza-topping" value="pizza">
+            <label for="kale">Kale</label>
+          </div>
+          <div>
+            <button type="submit">Submit Order</button>
+          </div>
+        </form>
       </div>
-      <div class="pizza-party">
-        <p>Select your Saucy Slime:</p>
-        <input type="radio" id="pizza-slime" name="red-sauce" value="pizza">
-        <label for="pizza-slime">Red Slime</label>
-        <br>
-        <input type="radio" id="pizza-slime" name="white-sauce" value="pizza">
-        <label for="pizza-slime">White Slime</label>
-      </div>
-      <div class="pizza-party">
-        <p>Select Gremlin Crust Style:</p>
-        <input type="radio" id="pizza-crust" name="thin-crust" value="pizza-crust">
-        <label for="pizza-crust">Thin Crust</label>
-        <br>
-        <input type="radio" id="pizza-crust" name="hand-tossed" value="pizza">
-        <label for="pizza-crust">Hand Tossed</label>
-        <br>
-        <input type="radio" id="pizza-crust" name="thick-crust"
-        value="pizza">
-        <label for="pizza-crust">Thick Crust ($3)</label>
-        <br>
-        <input type="radio" id="pizza-crust" name="stuffed-crust" value="pizza">
-        <label for="pizza-crust">Stuffed Crust ($2)</label>
-      </div>
-      <div class="pizza-party">
-        <p>Select Trash Toppings:</p>
-        <input type="radio" id="pizza-toppings" name="dirt-cheese" value="pizza">
-        <label for="pizza-toppings">Dirt Cheese</label>
-        <br>
-        <input type="radio" id="pizza-toppings" name="molderoni" value="pizza">
-        <label for="pizza-toppings">'Mold'eroni</label>
-        <br>
-        <input type="radio" id="pizza-toppings" name="ham" value="pizza">
-        <label for="pizza-toppings">Hazard Ham</label>
-        <br>
-        <input type="radio" id="pizza-toppings" name="anchovy" value="pizza">
-        <label for="pizza-toppings">Acidic Anchovies</label>
-        <br>
-        <input type="radio" id="pizza-toppings" name="fly-larvae" value="pizza">
-        <label for="pizza-toppings">Aged Fly Larvae</label>
-        <br>
-        <input type="radio" id="pizza-toppings" name="pineapple" value="pizza">
-        <label for="pizza-toppings">Spoiled Pineapple</label>
-        <br>
-        <input type="radio" id="pizza-toppings" name="artichoke" value="pizza">
-        <label for="pizza-toppings">Rancid ArtiCHOKEs</label>
-        <br>
-        <input type="radio" id="pizza-toppings" name="onion" value="pizza">
-        <label for="pizza-toppings">Rotten Red Onion</label>
-        <br>
-        <input type="radio" id="pizza-toppings" name="kale" value="pizza">
-        <label for="pizza-toppings">Kale</label>
-      </div>
-      
-
-
-    </form>
+    </div>
+    <div id="myGremlin-hidden">
+      <h2>YOUR GREMLIN PIZZA ORDER</h2>
+      <p><span id="myGremlinPizza"></span></p>
+    </div>
   </div>
 </body>
 </html>

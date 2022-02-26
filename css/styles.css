@@ -1,6 +1,11 @@
-/* .jumbotron {
+.jumbotron {
   text-align: center;
   background-color: rgb(250, 204, 212);
   font-family: "Sofia", sans-serif;
   margin: 75px; 
-} */
+}
+
+#myGremlin-hidden {
+  display: none;
+}
+
