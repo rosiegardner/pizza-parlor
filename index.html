@@ -17,7 +17,10 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <h2>Build Your Gremlin Pizza!</h2>
+        <h2 class="font-effect-neon">Build Your Gremlin Pizza!</h2>
+        <br>
+        <p><b>!WARNING!</b></p>
+        <p><em>Consumption of trash, hazardous waste, spoiled, or rotten produce / product of any sort may increase your risk of food-borne illness and possibly <strong>DEATH</strong>. Please plan accordingly prior to your order.</em></p>
         <form id="pizzaOrder">
           <div class="pizza-party">
             <p class="font-effect-neon">Select Size:</p>
@@ -54,43 +57,50 @@
             <label for="white-slime">White Slime</label>
           </div>
           <div class="pizza-party">
-            <p class="font-effect-neon">Select Trash Toppings: ($1)</p>
+            <p class="font-effect-neon">Select Trash Toppings:</p>
+            <p><em>*All trash toppings are $1 & locally sourced each morning.*</em></p>
             <input type="checkbox" id="dirt-cheese" name="pizza-topping" value="pizza" checked>
-            <label for="dirt-cheese">Dirt Cheese</label>
+            <label for="dirt-cheese">Dirt Cheese ($1)</label>
             <br>
             <input type="checkbox" id="molderoni" name="pizza-topping" value="pizza">
-            <label for="molderoni">'Mold'eroni</label>
+            <label for="molderoni">'Mold'eroni ($1)</label>
             <br>
             <input type="checkbox" id="ham" name="pizza-topping" value="pizza">
-            <label for="ham">Hazard Ham</label>
+            <label for="ham">Hazard Ham ($1)</label>
             <br>
             <input type="checkbox" id="anchovy" name="pizza-topping" value="pizza">
-            <label for="anchovy">Acidic Anchovies</label>
+            <label for="anchovy">Acidic Anchovies ($1)</label>
             <br>
             <input type="checkbox" id="fly-larvae" name="pizza-topping" value="pizza">
-            <label for="fly-larvae">Aged Fly Larvae</label>
+            <label for="fly-larvae">Aged Fly Larvae ($1)</label>
             <br>
             <input type="checkbox" id="pineapple" name="pizza-topping" value="pizza">
-            <label for="pineapple">Spoiled Pineapple</label>
+            <label for="pineapple">Spoiled Pineapple ($1)</label>
             <br>
             <input type="checkbox" id="artichoke" name="pizza-topping" value="pizza">
-            <label for="artichoke">Rancid ArtiCHOKEs</label>
+            <label for="artichoke">Rancid ArtiCHOKEs ($1)</label>
             <br>
             <input type="checkbox" id="onion" name="pizza-topping" value="pizza">
-            <label for="onion">Rotten Red Onion</label>
+            <label for="onion">Rotten Red Onion ($1)</label>
             <br>
             <input type="checkbox" id="kale" name="pizza-topping" value="pizza">
-            <label for="kale">Kale</label>
+            <label for="kale">Kale ($1)</label>
           </div>
-          <div>
+          <div class="pizza-party">
             <button type="submit">Submit Order</button>
           </div>
         </form>
       </div>
     </div>
-    <div id="myGremlin-hidden">
-      <h2>YOUR GREMLIN PIZZA ORDER</h2>
-      <p><span id="myGremlinPizza"></span></p>
+    <div id="show-myGremlin">
+      <br>
+      <h2 class="font-effect-neon">YOUR TRASH GREMLIN ORDER</h2>
+      <br>
+      <p>Size: <span class="your-size"></span></p>
+      <p>Crust Style: <span class="your-crust"></span></p>
+      <p>Slime Style: <span class="your-slime"></span></p>
+       <p>Trash Pickings: <span class="your-trash"></span></p>
+       <p>Your Trash Gremlin Total: <span class="your-total"></span></p>
     </div>
   </div>
 </body>

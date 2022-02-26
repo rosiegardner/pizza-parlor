@@ -44,11 +44,20 @@ $(document).ready(function() {
     let pizzaSauce = $("input:radio[name=pizza-slime]:checked").val();
     let pizzaTopping = $("input:checkbox[name=pizza-topping]:checked").val();
     let pizzaPricing = myPizza.totalOrder();
-    $("#myGremlinPizza").text(myPizza);
-    $("#myGremlin-hidden").show(pizzaPricing);
 
-
+    $("input:radio[name=pizza-size]:checked").val();
+    $("input:radio[name=pizza-crust]:checked").val();
+    $("input:radio[name=pizza-slime]:checked").val();
+    $("input:checkbox[name=pizza-topping]:checked").val();
+    
     const myPizza = new Pizza(pizzaSize, pizzaCrust, pizzaSauce, pizzaTopping, pizzaPricing);
+    
+    $("#show-myGremlin").show();
+    $(".your-size").show(myPizza.pizzaSize);
+    $(".your-crust").show(myPizza.pizzaCrust);
+    $(".your-slime").show(myPizza.pizzaSauce);
+    $(".your-trash").show(myPizza.pizzaTopping);
+    $(".your-total").show(myPizza.pizzaPricing);
     
   });
 });

@@ -57,3 +57,7 @@ Test: "This prototype should return the base price increased by 2 for a "Stuffed
 Code: myPizza.totalOrder();
 Input: "Stuffed Crust"
 Expected Output: 20/22;
+
+Test: "This prototype should return the base price increased by 1 for all Toppings selected."
+Code: myPizza.totalOrder()
+Expected Output: 1;

@@ -1,11 +1,15 @@
+body {
+  background-color: #f1c8c1
+}
+
 .jumbotron {
   text-align: center;
-  background-color: rgb(250, 204, 212);
+  background-color: rgb(116, 177, 126);
   font-family: "Sofia", sans-serif;
   margin: 75px; 
 }
 
-#myGremlin-hidden {
-  display: none;
+#show-myGremlin {
+  
 }
 
