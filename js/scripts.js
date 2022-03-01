@@ -14,25 +14,26 @@ Pizza.prototype.myOrder = function() {
 };
 
 Pizza.prototype.totalOrder = function() {
-  if (this.pizzaSize === "medium-13inch") {
-    this.pizzaPricing += 3; // This will increase the value by 3 for MD
+  if (this.pizzaSize === "13inch") {
+    this.pizzaPricing += 3; 
   }
-  if (this.pizzaSize === "large-16inch") {
-    this.pizzaPricing += 6; // This will increase the value by 6 for LG
+  if (this.pizzaSize === "16inch") {
+    this.pizzaPricing += 6; 
   }
-  if (this.pizzaCrust === "Thick Crust") {
-    this.pizzaPricing += 3; // This will increase the value by 3 for all Sizes
+  if (this.pizzaCrust === "thick") {
+    this.pizzaPricing += 3; 
   }
-  if (this.pizzaCrust === "Stuffed Crust") {
-    this.pizzaPricing += 2; // This will increase the value by 2 for all Sizes
+  if (this.pizzaCrust === "stuffed") {
+    this.pizzaPricing += 2; 
   } 
-  if (this.pizzaTopping === " ") { 
+  if (this.pizzaTopping === "topping") { 
   this.pizzaPricing += 1; // This will increase the value by 1 for all Toppings
   } else {
     this.pizzaPricing += 0;
   }
   return this.pizzaPricing; // This will return the total Value of my Order
 };
+//work on checkbox form
 
 // User Interface Logic
 
@@ -42,15 +43,19 @@ $(document).ready(function() {
     let pizzaSize = $("input:radio[name=pizza-size]:checked").val();
     let pizzaCrust = $("input:radio[name=pizza-crust]:checked").val();
     let pizzaSauce = $("input:radio[name=pizza-slime]:checked").val();
-    let pizzaTopping = $("input:checkbox[name=pizza-topping]:checked").val();
+    let pizzaTopping = $("input:radio[name=pizza-topping]:checked").val();
+    const myPizza = new Pizza(pizzaSize, pizzaCrust, pizzaSauce, pizzaTopping);
     let pizzaPricing = myPizza.totalOrder();
+    console.log(pizzaPricing);
 
     $("input:radio[name=pizza-size]:checked").val();
+    console.log(pizzaSize);
     $("input:radio[name=pizza-crust]:checked").val();
+    console.log(pizzaCrust);
     $("input:radio[name=pizza-slime]:checked").val();
-    $("input:checkbox[name=pizza-topping]:checked").val();
-    
-    const myPizza = new Pizza(pizzaSize, pizzaCrust, pizzaSauce, pizzaTopping, pizzaPricing);
+    console.log(pizzaSauce);
+    $("input:radio[name=pizza-topping]:checked").val();
+    console.log(pizzaTopping);
 
     $("#show-myGremlin").show();
     $(".your-size").show(myPizza.pizzaSize);
