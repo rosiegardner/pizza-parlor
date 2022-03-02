@@ -1,17 +1,18 @@
 // Business Logic for Pizza()
 
 function Pizza(pizzaSize, pizzaCrust, pizzaSauce, pizzaTopping) {
-  this.pizzaSize = pizzaSize; // Size of pizza - SM/MD/LG
-  this.pizzaCrust = pizzaCrust; // Style of Crust(4)
-  this.pizzaSauce = pizzaSauce; // Sauce Selection (2)
-  this.pizzaTopping = pizzaTopping; // Toppings
-  this.pizzaPricing = 15; // Base Value of Pizza (SM)
+  this.pizzaSize = pizzaSize; 
+  this.pizzaCrust = pizzaCrust; 
+  this.pizzaSauce = pizzaSauce;
+  this.pizzaTopping = pizzaTopping; 
+  this.pizzaPricing = 15; 
 }
 
 
 Pizza.prototype.myOrder = function() {
   return this.pizzaSize + " pizza, " + this.pizzaCrust + " with " + this.pizzaSauce + ", topped with: " + this.pizzaTopping;
 };
+
 
 Pizza.prototype.totalOrder = function() {
   if (this.pizzaSize === "13inch") {
@@ -26,14 +27,22 @@ Pizza.prototype.totalOrder = function() {
   if (this.pizzaCrust === "stuffed") {
     this.pizzaPricing += 2; 
   } 
-  if (this.pizzaTopping === "topping") { 
-  this.pizzaPricing += 1; // This will increase the value by 1 for all Toppings
+  if (this.pizzaTopping === "Mold'eroni & Rancid ArtiCHOKEs") { 
+  this.pizzaPricing += 2; 
+  }
+  if (this.pizzaTopping === "Hazard Ham & Spoiled Pineapple") {
+    this.pizzaPricing += 2;
+  } 
+  if (this.pizzaTopping === "Acidic Anchovies & Aged Fly Larvae") {
+    this.pizzaPricing += 2;
+  }
+  if (this.pizzaTopping === "Rotten Red Onion & Kale") {
+    this.pizzaPricing += 2;
   } else {
     this.pizzaPricing += 0;
   }
-  return this.pizzaPricing; // This will return the total Value of my Order
+  return this.pizzaPricing; 
 };
-//work on checkbox form
 
 // User Interface Logic
 
@@ -46,23 +55,17 @@ $(document).ready(function() {
     let pizzaTopping = $("input:radio[name=pizza-topping]:checked").val();
     const myPizza = new Pizza(pizzaSize, pizzaCrust, pizzaSauce, pizzaTopping);
     let pizzaPricing = myPizza.totalOrder();
-    console.log(pizzaPricing);
 
     $("input:radio[name=pizza-size]:checked").val();
-    console.log(pizzaSize);
     $("input:radio[name=pizza-crust]:checked").val();
-    console.log(pizzaCrust);
     $("input:radio[name=pizza-slime]:checked").val();
-    console.log(pizzaSauce);
     $("input:radio[name=pizza-topping]:checked").val();
-    console.log(pizzaTopping);
 
+    $(".your-size").text(pizzaSize);
+    $(".your-crust").text(pizzaCrust);
+    $(".your-slime").text(pizzaSauce);
+    $(".your-trash").text(pizzaTopping);
+    $(".your-total").text(pizzaPricing);
     $("#show-myGremlin").show();
-    $(".your-size").show(myPizza.pizzaSize);
-    $(".your-crust").show(myPizza.pizzaCrust);
-    $(".your-slime").show(myPizza.pizzaSauce);
-    $(".your-trash").show(myPizza.pizzaTopping);
-    $(".your-total").show(myPizza.pizzaPricing);
-    ////WHY WONT YOU WORK
   });
 });

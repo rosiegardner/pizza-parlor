@@ -24,65 +24,57 @@
         <form id="pizzaOrder">
           <div class="pizza-party">
             <p class="font-effect-neon">Select Size:</p>
-            <input type="radio" id="small-10inch" name="pizza-size" value="10inch" checked>
+            <input type="radio" id="small-10inch" name="pizza-size" value="Sm-10inch" checked>
             <label for="small-10inch">Small - 10" ($15)</label>
             <br>
-            <input type="radio" id="medium-13inch" name="pizza-size" value="13inch">
+            <input type="radio" id="medium-13inch" name="pizza-size" value="Med-13inch">
             <label for="medium-13inch">Medium - 13" ($18)</label>
             <br>
-            <input type="radio" id="large-16inch" name="pizza-size" value="16inch">
+            <input type="radio" id="large-16inch" name="pizza-size" value="Lrg-16inch">
             <label for="large-16inch">Large - 16" ($21)</label>
           </div>
           <div class="pizza-party">
             <p class="font-effect-neon">Select Gremlin Crust Style:</p>
-            <input type="radio" id="thin-crust" name="pizza-crust" value="thin" checked>
+            <input type="radio" id="thin-crust" name="pizza-crust" value="Thin Crust" checked>
             <label for="thin-crust">Thin Crust</label>
             <br>
-            <input type="radio" id="tossed-crust" name="pizza-crust" value="hand">
+            <input type="radio" id="tossed-crust" name="pizza-crust" value="Hand Tossed">
             <label for="tossed-crust">Hand Tossed</label>
             <br>
             <input type="radio" id="thick-crust" name="pizza-crust"
-            value="thick">
+            value="Thick Crust">
             <label for="thick-crust">Thick Crust ($3)</label>
             <br>
-            <input type="radio" id="stuffed-crust" name="pizza-crust" value="stuffed">
+            <input type="radio" id="stuffed-crust" name="pizza-crust" value="Stuffed-Crust">
             <label for="stuffed-crust">Stuffed Crust ($2)</label>
           </div>
           <div class="pizza-party">
             <p class="font-effect-neon">Select your Saucy Slime:</p>
-            <input type="radio" id="red-slime" name="pizza-slime" value="redSauce1" checked>
+            <input type="radio" id="red-slime" name="pizza-slime" value="Red Slime" checked>
             <label for="red-slime">Red Slime</label>
             <br>
-            <input type="radio" id="white-slime" name="pizza-slime" value="whiteSauce2">
+            <input type="radio" id="white-slime" name="pizza-slime" value="White Slime">
             <label for="white-slime">White Slime</label>
           </div>
           <div class="pizza-party">
             <p class="font-effect-neon">Select Trash Toppings:</p>
             <p><strong>Pizza's come topped with our famous DIRT CHEESE and are limited to 1 topping per pie</strong>.</p>
-            <p><em>*All trash toppings are $1 & locally sourced each morning.*</em></p>
-            <input type="radio" id="molderoni" name="pizza-topping" value="topping">
-            <label for="molderoni">Mold'eroni</label>
+            <p><em>*All trash topping combo's are $2 & locally sourced each morning.*</em></p>
+            <input type="radio" id="dirt-cheese" name="pizza-topping" value="Dirt Cheese">
+            <label for="dirt-cheese">Extra Dirt Cheese (free of charge)</label> 
             <br>
-            <input type="radio" id="ham" name="pizza-topping" value="topping">
-            <label for="ham">Hazard Ham</label>
+            <input type="radio" id="molderoni" name="pizza-topping" value="Mold'eroni & Rancid ArtiCHOKEs">
+            <label for="molderoni">Mold'eroni & Rancid ArtiCHOKES</label>
             <br>
-            <input type="radio" id="anchovy" name="pizza-topping" value="topping">
-            <label for="anchovy">Acidic Anchovies</label>
+            <input type="radio" id="ham" name="pizza-topping" value="Hazard Ham & Spoiled Pineapple">
+            <label for="ham">Hazard Ham & Spoiled Pineapple</label>
             <br>
-            <input type="radio" id="fly-larvae" name="pizza-topping" value="topping">
-            <label for="fly-larvae">Aged Fly Larvae</label>
+            <input type="radio" id="anchovy" name="pizza-topping" value="Acidic Anchovies & Aged Fly Larvae">
+            <label for="anchovy">Acidic Anchovies & Aged Fly Larvae</label>
             <br>
-            <input type="radio" id="pineapple" name="pizza-topping" value="topping">
-            <label for="pineapple">Spoiled Pineapple</label>
-            <br>
-            <input type="radio" id="artichoke" name="pizza-topping" value="topping">
-            <label for="artichoke">Rancid ArtiCHOKEs</label>
-            <br>
-            <input type="radio" id="onion" name="pizza-topping" value="topping">
-            <label for="onion">Rotten Red Onion</label>
-            <br>
-            <input type="radio" id="kale" name="pizza-topping" value="topping">
-            <label for="kale">Kale</label>
+            <input type="radio" id="onion" name="pizza-topping" value="Rotten Red Onion & Kale">
+            <label for="onion">Rotten Red Onion & Kale</label>
+             <br>
           </div>
           <div class="pizza-party">
             <button type="submit">Submit Order</button>
@@ -92,13 +84,11 @@
     </div>
     <div id="show-myGremlin">
       <br>
-      <h2 class="font-effect-neon">YOUR TRASH GREMLINS ORDER</h2>
+      <h2 class="font-effect-neon">YOUR ORDER IS IN THE TRASH</h2>
       <br>
-      <p>Size: <span class="your-size"></span></p>
-      <p>Crust Style: <span class="your-crust"></span></p>
-      <p>Slime Style: <span class="your-slime"></span></p>
-       <p>Trash Pickings: <span class="your-trash"></span></p>
-       <p>Your Trash Gremlin Total: <span class="your-total"></span></p>
+      <p>A beautifully trashy <span class="your-size"></span> pizza, <span class="your-crust"></span> slathered in <span class="your-slime"></span> and graciously topped with our <span class="your-trash"></span> !</p>
+      <br>
+      <p>Your Trash Gremlin Total: $<span class="your-total"></span></p>
     </div>
   </div>
 </body>

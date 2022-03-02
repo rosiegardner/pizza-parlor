@@ -79,9 +79,9 @@ Input: "large-16inch";
 - Input: "Stuffed Crust"
 - Expected Output: 20/22;
 
-- Test: "This prototype should return the base price increased by 1 for one per pizza Toppings selected."
+- Test: "This prototype should return the base price increased by 2 for topping combo's."
 - Code: myPizza.totalOrder()
-- Expected Output: 1;
+- Expected Output: 2;
 
 ## Known Bugs
 
