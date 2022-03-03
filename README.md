@@ -13,6 +13,7 @@
 
 ## Setup/Installation Requirements
 
+* https://rosiegardner.github.io/pizza-parlor/
 * Clone or download this repository onto your desktop.
 * Navigate to the top-level of directory.
 * Open index.html in the browser of your choice.
