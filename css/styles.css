@@ -3,10 +3,18 @@ body {
 }
 
 .jumbotron {
+  border-radius: 150%;
   text-align: center;
   background-color: rgb(116, 177, 126);
   font-family: "Sofia", sans-serif;
   margin: 75px; 
+}
+
+img {
+  border-radius: 50%;
+  margin: 12px;
+  border: 5px;
+  padding: 8px;
 }
 
 #show-myGremlin {
