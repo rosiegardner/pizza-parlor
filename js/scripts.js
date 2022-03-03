@@ -15,16 +15,16 @@ Pizza.prototype.myOrder = function() {
 
 
 Pizza.prototype.totalOrder = function() {
-  if (this.pizzaSize === "13inch") {
+  if (this.pizzaSize === "Med-13inch") {
     this.pizzaPricing += 3; 
   }
-  if (this.pizzaSize === "16inch") {
+  if (this.pizzaSize === "Lrg-16inch") {
     this.pizzaPricing += 6; 
   }
-  if (this.pizzaCrust === "thick") {
+  if (this.pizzaCrust === "Thick Crust") {
     this.pizzaPricing += 3; 
   }
-  if (this.pizzaCrust === "stuffed") {
+  if (this.pizzaCrust === "Stuffed Crust") {
     this.pizzaPricing += 2; 
   } 
   if (this.pizzaTopping === "Mold'eroni & Rancid ArtiCHOKEs") { 
