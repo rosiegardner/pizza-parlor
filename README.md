@@ -85,7 +85,7 @@ Input: "large-16inch";
 
 ## Known Bugs
 
-* UI functionality does not display users input.
+* NO KNOWN BUGS.
 
 ## License 
 
